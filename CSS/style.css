@@ -1,0 +1,23 @@
+header {
+  background-color: #00CCFF;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  border: 3px solid #73AD21;
+}
+#buttons {
+  margin: auto;
+  width: 40%;
+  text-align: center;
+}
+
+#query{
+  margin: auto;
+  width: 40%;
+  text-align: center;
+}
+
+label{
+  margin: auto;
+  display:inline-block;
+}

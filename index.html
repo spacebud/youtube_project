@@ -1,42 +1,27 @@
 <!doctype html>
+
 <html>
   <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7">
+  <link rel="stylesheet" href="css/style.css">
 
-  <body>
-    <div id ="jumbotron">
 
-      <div id ="page-header">
-        <h1> Stefano Tube </h1>
+
+  <body background = "http://7-themes.com/data_images/out/1/6768458-3d-backgrounds.jpg">
+      <header>
+        <h1 id = "header"> Stefano Tube </h1>
         <title>Search</title>
-      </div>
+      </header>
+      <p></p>
+      <p></p>
 
       <div id="buttons">
-          <label> <input id="query" value="search" type="text"/>
-            <button id="search-container" diabled onclick="search()">Search</button></label>
+          <label> <input class ="form-control" style="width: 400px" id="query" type="text"/></label>
+          <button class = "btn btn-danger" id="search-container" onclick="search()">Search</button>
             <div id = "container">
-              <h2> Resuts </h2>
-              <ul id="results"> </ul>
+              <ul id="result"> </ul>
             </div>
       </div>
 
-      <div class = "page-header">
-        <p> This is the jumbotron class </p>
-        <p>
-          <button class = "btn btn-danger" type= "submit" role = "button">
-            Button</button>
-          <a href ='#' class = "btn btn-success" role = "button">
-            More Info </a>
-        </p>
-      </div>
-
-      <div class ="container">
-        <div class="row">
-          <div class="col-xs-9">.col-xs-9</div>
-          <div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 </div>
-          <div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
-        </div>
-      </div>
-    </div>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
       <script src="JS/app.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>

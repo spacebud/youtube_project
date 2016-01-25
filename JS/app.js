@@ -18,14 +18,14 @@ function makeRequest() {
     part: 'snippet'
   });
   request.execute(function(response) {
-    $('#results').empty()
+    $('#result').empty()
     var srchItems = response.result.items;
     $.each(srchItems, function(index, item) {
     vidTitle = item.snippet.title;
     vidDescription = item.snippet.description;
     vidThumburl =  item.snippet.thumbnails.default.url;
-    vidThumbimg = '<pre><img id="thumb" src="'+vidThumburl+'" alt="No  Image Available." style="width:204px;height:128px"></pre>';
-    $('#results').append('<pre>' + vidTitle + vidThumbimg + vidDescription+'</pre>');
+    vidThumbimg = '<pre><img id="thumb" src="'+vidThumburl+ '" alt="No  Image Available." style="width:204px;height:128px"></pre>';
+    $('#result').append('<pre>' + vidTitle + vidThumbimg+'</pre>');
    });
  })
 }
